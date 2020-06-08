@@ -1,0 +1,29 @@
+.footer-2{
+    min-width: 600px;
+    padding-top: 100px;
+    padding-bottom: 110px;
+
+    background-color: white;
+
+    display: flex;
+    justify-content: space-around;
+}
+.footer-2__container{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+    max-width: 560px;
+    color: $gray;
+    text-align: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 24px;
+
+    p{
+        margin-bottom: 25px;
+    }
+}
+.footer-2__logo{
+    margin-bottom: 20px;
+}

@@ -1,0 +1,29 @@
+.registration
+    .registration__container
+        h1.registration__blank Регистрация аккаунта
+        input.registration__name(type="text" placeholder="Имя")
+        input.registration__second-name(type="text" placeholder="Фамилия")
+        .registration__sex
+            label.registration__libel
+                input.registration__sax__input(type="radio" name="sex" value="Мужчина")
+                span.registration__sex__face
+                p Мужчина
+            label.registration__libel
+                input.registration__sax__input(type="radio" name="sex" value="Мужчина")
+                span.registration__sex__face
+                p Женщина
+        h3.registration__date-blank дата рождения
+        input.registration__date-input(type="date" placeholder="DD.MM.YYYY")
+        h3.registration__login-details-blank данные для входа в сервис
+        input.registration__email(type="email" placeholder="Email")
+        input.registration__password(type="password" placeholder="Пароь")
+        label.registration__special-offers
+            input.registration__special-offers-input(type="checkbox" name="special-offers" value="Мужчина")
+            spun.registration__special-offers__face-checkbox
+            spun.registration__special-offers-text Получать спецпредложения
+        button.registration__payments
+            p перейти к оплате
+            img(src="./img/arrow.png", alt="arrow")
+        p.registration__toxin Уже есть аккаунт на Toxin
+        button.registration_enter 
+            p ВОЙТИ

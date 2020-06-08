@@ -1,0 +1,204 @@
+.registration{
+    width: 320px;
+    padding-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+
+    background-color: #fff;
+    border-radius: 4px;
+    
+}.registration__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.registration__name{
+    margin-top: 19px;
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+
+    border-radius: 4px;
+    border:1px $gray solid;
+}
+.registration__second-name{
+    margin-top: 10px;
+    width: 100%;
+    padding-top: 13px;
+    padding-left: 15px;
+    padding-bottom: 14px;
+    border-radius: 4px;
+    border:1px $gray solid;
+}
+.registration__sex{
+    margin-top: 11px;
+    display: flex;
+    margin-bottom: 24px;
+    
+}
+.registration__libel{
+    display:flex;
+    p{
+        line-height: 17px;
+        margin-right: 18px;
+    }
+}
+.registration__sax__input{
+    display: none;
+}
+.registration__sex__face{
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 10px;
+    border: 1px $gray solid;
+    position: relative;
+    margin-right: 11px;   
+}
+.registration__sax__input:checked + .registration__sex__face::before {
+    content: "";
+    display: block;
+    width: 11px;
+    height: 11px;
+    border-radius: 10px;
+
+    position: absolute;
+    transform: translate(4.5px,4.5px);
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+}
+
+
+
+
+
+.registration__date-blank{
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+.registration__date-input{
+    width: 100%;
+    padding-top: 5px;
+    padding-left: 14px;
+    padding-bottom: 13px;
+    margin-bottom: 21px;
+
+    border-radius: 4px;
+    border: 1px $gray solid;
+    font-size: 16px;
+    color:$gray;
+    letter-spacing: 0px;
+}
+.registration__login-details-blank{
+    letter-spacing: 0.7px;
+    margin-bottom: 5px;
+}
+.registration__email{letter-spacing: 0px;
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 14px;
+    padding-bottom: 12px;
+    margin-bottom: 11px;
+
+    border-radius: 4px;
+    border: 1px $gray solid;
+    font-size: 15px;
+    color:$gray;
+    letter-spacing: 0px;
+}
+.registration__password{
+    width: 100%;
+    padding-top: 12px;
+    padding-left: 14px;
+    padding-bottom: 12px;
+    margin-bottom: 11px;
+
+    border-radius: 4px;
+    border: 1px $gray solid;
+    font-size: 15px;
+    color:$gray;
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+.registration__special-offers{
+    display: block;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.registration__special-offers-input{
+    display:none;
+}
+.registration__special-offers__face-checkbox{
+    display: inline-block;
+    width: 38px;
+    height: 18px;
+    position: relative;
+    border-radius: 10px;
+    border:1px $gray solid;
+}
+.registration__special-offers__face-checkbox::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+    transform: translate(3px,3px);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.registration__special-offers-input:checked+.registration__special-offers__face-checkbox::before{
+    background-color: #1BA4Fa;
+    transform: translate(24px,3px);
+}
+.registration__special-offers-text{
+    margin-left: 11px;
+    line-height: 0px;
+    padding-bottom: 5px;
+    letter-spacing: 1.1px;
+}
+
+
+.registration__payments{
+    margin-top: 22px;
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    padding-top: 16px;
+    padding-bottom: 12px;
+    margin-bottom: 28px;
+    p{
+        color: white;
+    }
+}
+
+.registration__toxin{
+    margin-top: 10px;
+    letter-spacing: 0.8px;
+    width: 190px;
+}
+
+.registration_enter{
+    display: inline-block;
+    width: 99px;
+    height: 44px;
+    margin: 0;
+    border: 2px #BC9CFF solid;
+    position: relative;
+    background-color: #fff;
+
+    p{
+        margin: 0;
+        position: absolute;
+        left: -10px;
+        top: 14px;
+        color: #BC9CFF;
+        font-weight: bold;
+    }
+}

@@ -1,0 +1,99 @@
+@import url(https://allfont.ru/allfont.css?fonts=quicksand-regular);
+.hotels{
+    width: 380px;
+    
+    border-radius: 4px;
+
+    background-color: white;
+    font-family: Quicksand;
+    font-style: normal;
+    font-size: 14px;
+    
+    color: $gray;
+    font-family: 'Conv_quicksand-regular',Arial;
+
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    h1{
+        padding-left: 30px;
+        padding-right:30px;
+        padding-top: 41px;
+        letter-spacing:1.3px;
+    }
+}
+.hotels__arrival{
+    letter-spacing:1.1px;
+
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    padding-left: 30px;
+    padding-right:30px;
+    margin-top: 20px;
+}
+.hotels__date{
+    width:150px
+    
+    
+}
+.hotels__date__descriptions{
+    margin-bottom: 4px;
+}
+.hotels__guests{
+    margin-top: 22px;
+}
+.hotels__guests-count {
+    border: 1px $gray solid;
+    border-radius: 4px;
+    width:304px;
+    display:flex;
+    justify-content:space-between;
+    
+    margin-top: 4px;
+    padding-top:12px;
+    padding-bottom:12.5px;
+    padding-left:15px;
+    img{
+        width:12px;
+        height:8px;
+        padding-right:15px;
+        padding-top: 5px;
+
+    }
+}
+.hotels__button{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+
+    font-family: Montserrat, Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.9px;
+    /* identical to box height */
+    
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 150px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    margin-bottom: 28px;
+
+    border-radius: 22px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+
+    color: white;
+    margin-top: 31px;
+    text-align: center;
+    p{
+        width: 100%;
+        padding-left: 9.5px;
+    }
+    img{
+        padding-right: 6px;
+    }
+}

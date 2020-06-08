@@ -1,0 +1,19 @@
+.date__container{
+    width: 148px;
+    background-color: #fff;
+    border: 1px $gray solid;
+    border-radius: 4px;
+}
+.date__input-datepicker{
+    width: 120px;
+    padding-left: 15px;
+    padding-top: 13px;
+    padding-bottom: 14px;
+
+    letter-spacing:1.2px;
+    font-family: Montserrat,Arial, Helvetica, sans-serif;
+
+    border:none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
