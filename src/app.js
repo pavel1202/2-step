@@ -7,6 +7,7 @@ import './img/messengers/facebook.png';
 import './img/messengers/instagram.png';
 import './img/messengers/twitter.png';
 import './img/arrow.png';
+import './img/arrow.svg';
 
 
 import './modules/dropdown/dropdown.js'

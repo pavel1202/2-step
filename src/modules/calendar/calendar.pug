@@ -1,0 +1,22 @@
+.calendar
+    .calendar__container
+        .calendar__blank
+            img(src="./img/arrow.svg", alt="arrow").calendar__arrow-left
+            h2.calendar__month Август 2019
+            img(src="./img/arrow.svg", alt="arrow").calendar__arrow-right
+        ul.calendar__weekday
+            li.calendar__weekday-day Пн
+            li.calendar__weekday-day Вт
+            li.calendar__weekday-day Ср
+            li.calendar__weekday-day Чт
+            li.calendar__weekday-day Пт
+            li.calendar__weekday-day Сб
+            li.calendar__weekday-day Вс
+        .calendar__days
+        //-     .calendar__day.calendar__day--not-this-month.calendar__day--selected 29
+        //-     .calendar__day.calendar__day--not-this-month.calendar__day--active 30
+        //-     .calendar__day.calendar__day--not-this-month.calendar__day--selected 31
+        //-     - var i = 1;
+        //-         while i < 32
+        //-             .calendar__day= i++
+        //-     .calendar__day.calendar__day--not-this-month.calendar__day--now 1

@@ -1,0 +1,28 @@
+.filter-date-dropdown{
+    width: 249px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+
+
+    align-items: center;
+
+
+    border: 1px $gray solid;
+    border-radius:4px;
+
+
+    background-color: white;
+    cursor: pointer;
+    p{
+        letter-spacing: 0.9px;
+    }
+    img{
+        width: 12px;
+        height: 8px;
+        margin-right: 15px;
+    }
+}
