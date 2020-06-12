@@ -11,3 +11,6 @@ import './img/arrow.svg';
 
 
 import './modules/dropdown/dropdown.js'
+import './modules/calendar/calendar.js'
+
+
