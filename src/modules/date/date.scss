@@ -1,14 +1,21 @@
 .date__container{
+    display: flex;
+    justify-content: space-between;
     width: 148px;
+    align-items: center;
+
+
     background-color: #fff;
     border: 1px $gray solid;
     border-radius: 4px;
+    
 }
 .date__input-datepicker{
+    
     width: 120px;
     padding-left: 15px;
-    padding-top: 13px;
-    padding-bottom: 14px;
+    padding-top: 8px;
+    padding-bottom: 11px;
 
     letter-spacing:1.2px;
     font-family: Montserrat,Open Sans,Arial, Helvetica, sans-serif;
@@ -16,4 +23,11 @@
     border:none;
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
+}
+
+
+.date__pointer{
+    width: 12px;
+    height: 8px;
+    margin-right: 16px;
 }

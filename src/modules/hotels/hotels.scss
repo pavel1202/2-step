@@ -38,6 +38,15 @@
 .hotels__date__descriptions{
     margin-bottom: 4px;
 }
+.hotels__calendar{
+    position: relative;
+
+    .calendar{
+        position: absolute;
+        top: 70px;
+        right: 5px;
+    }
+}
 .hotels__guests{
     margin-top: 21px;
 }

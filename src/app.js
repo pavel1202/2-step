@@ -12,5 +12,5 @@ import './img/arrow.svg';
 
 import './modules/dropdown/dropdown.js'
 import './modules/calendar/calendar.js'
-
-
+import './modules/filter-date-dropdown/filter-date-dropdown.js'
+import './modules/date/date.js'
