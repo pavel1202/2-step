@@ -1,14 +1,26 @@
+.date{
+    width: 320px;
+}
 .date__container{
     display: flex;
     justify-content: space-between;
-    width: 148px;
     align-items: center;
+    
+    width: 100%;
+}
+.date_wrapper-text{
+    margin-bottom: 2px;
+}
+.date__input{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 148px;
 
 
     background-color: #fff;
     border: 1px $gray solid;
     border-radius: 4px;
-    
 }
 .date__input-datepicker{
     
@@ -30,4 +42,8 @@
     width: 12px;
     height: 8px;
     margin-right: 16px;
+}
+.date__calendar{
+    margin-top: 5px;
+    position: absolute;
 }

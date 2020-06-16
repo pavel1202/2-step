@@ -10,7 +10,8 @@ import './img/arrow.png';
 import './img/arrow.svg';
 
 
-import './modules/dropdown/dropdown.js'
+import './modules/dropdown/dropdown.js'//-------------------
 import './modules/calendar/calendar.js'
 import './modules/filter-date-dropdown/filter-date-dropdown.js'
 import './modules/date/date.js'
+import './modules/dropdown-guests/dropdown-guests.js'

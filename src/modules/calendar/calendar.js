@@ -2,12 +2,13 @@
 
 export class Calendar{
     constructor(calendar){
+        console.log('start calendar');
         this.calendar = calendar;
         this.date = new Date();
         this.datePaint = new Date(this.date.getFullYear(),this.date.getMonth(),1);
         this.selected = [];
         this.monthName = ['Январь','Февраль','Март','Апрель','Май','Июнь','Июль','Август','Сентябрь','Октябрь','Ноябрь','Декабрь',];
-            
+        this.visibil = 'visible';
 
         this.calendarDaysDOM = calendar.getElementsByClassName('calendar__days')[0];
 
@@ -27,11 +28,8 @@ export class Calendar{
             calendar.getElementsByClassName('calendar__clean')[0].style.visibility = 'visible';
             calendar.getElementsByClassName('calendar__apply')[0].style.visibility = 'visible';
             if(this.selected.length>1)
-                this.selected.shift(Number(event.path[1].attributes.name));
-            if(event.path[1].attributes.name.nodeValue>this.selected[0])
-                this.selected.push(Number(event.path[1].attributes.name.nodeValue));
-            else
-                this.selected.unshift(Number(event.path[1].attributes.name.nodeValue));
+                this.selected.pop();
+            this.selected.unshift(Number(event.path[1].attributes.name.nodeValue));
             console.log(event.path[1].attributes.name.nodeValue); 
             console.log(this.selected);
             this.paint();
@@ -123,12 +121,15 @@ export class Calendar{
         this.paint();
     }
     apply(fun){
-        
-        this.calendar.getElementsByClassName('calendar__apply')[0].onclick =()=> fun(this.selected);
-        this.calendar.getElementsByClassName('calendar__apply')[0].onclick = ()=>{
+        let this1 = this;
+        this.calendar.getElementsByClassName('calendar__apply')[0].addEventListener("click", function (e) {
             console.log("apply");
-            fun(this.selected);
-        }
+            fun(this1.selected);
+        });
+        // this.calendar.getElementsByClassName('calendar__apply')[0].onclick += ()=>{
+        //     console.log("apply");
+        //     fun(this.selected);
+        // }
     }
     clean(){
         this.calendar.getElementsByClassName('calendar__apply')[0].style.visibility = 'hidden';
@@ -138,7 +139,15 @@ export class Calendar{
         
     }
     visibility(vis){
-        this.calendar.style.visibility = vis;
+        console.log(this.visibil+' - '+vis)
+        if(this.visibil != vis){
+            if(vis == 'visible')
+                this.calendar.style.display = 'block';
+            if(vis == 'hidden')
+                this.calendar.style.display = 'none';
+            this.visibil = vis;
+        }
+            
     }
 }
 

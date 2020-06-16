@@ -14,6 +14,7 @@
     align-items: center;
     @media(max-width:800px) {
         justify-content: space-around;
+
     }
 }
 .header-2__logo{
@@ -23,6 +24,7 @@
 }
 .header-2__container{
     display: flex;
+    margin: auto;
     @media(max-width:600px) {
         flex-wrap: wrap;
         justify-content: space-around;
@@ -52,7 +54,7 @@
     
     a{
         display: block;
-        width: 115px;
+        width: 135px;
         position: relative;
         .line{
             display: block;
@@ -77,5 +79,12 @@
             }
         }
     }
+    // @media(max-width:815px) {
+
+    //     a{
+    //         display: block;
+    //         width: 144px;
+    //     }
+    // }
     
 }

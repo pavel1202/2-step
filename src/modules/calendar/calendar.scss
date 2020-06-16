@@ -7,6 +7,7 @@
 
 
     background-color: white;
+    z-index: 10;
 }
 .calendar__container{
     padding-top: 20px;
@@ -24,9 +25,11 @@
 
 .calendar__arrow-left{
     cursor: pointer;
+    width: 16px;
 }
 .calendar__arrow-right{
     transform: rotate(180deg);
+    width: 16px;
 
     cursor: pointer;
 }
