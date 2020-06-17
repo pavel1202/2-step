@@ -1,0 +1,65 @@
+include ../../theme/mixins
+.text-field-default
+    h3 Text Field
+    p.--shape Default
+    input.text-field(type="email" placeholder="Email")
+.text-field-focus
+    h3 Text Field
+    p.--shape Hover / Focus
+    input.text-field(type="email" placeholder="Email" value="This is pretty awesome")
+.container-dropdown
+    h3 Dropdown
+    p.--shape Default
+    include ../../modules/dropdown-guests/dropdown-guests
+.space
+.container-date
+    include ../../modules/date/date
+.space
+.container-filter-date-dropdown
+    h3 filter date dropdown
+    include ../../modules/filter-date-dropdown/filter-date-dropdown
+.space
+h3 subscription text field
+.container-subscription-text-field
+    input.subscription-text-field(type="email" id="email" pattern=".+@globex.com" size="30" placeholder="Your email address")
+.space
++checkbox-list('дополнительные удобства',['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь'])
+.space
++room-information('Комфорт','Шумопоглощающие стены','./img/insert_emoticon.svg',true)
++room-information('Удобство','Окно в каждой из спален','./img/location_city.svg',true)
+.space
+.checkbox-buttons
+    h3 Checkbox Buttons
+    label.checkbox.checkbox-list__list-li
+        input.checkbox__input(type="checkbox")
+        .checkbox__face
+        p.checkbox__text Можно курить
+    label.checkbox.checkbox-list__list-li
+        input.checkbox__input(type="checkbox")
+        .checkbox__face
+        p.checkbox__text Можно с питомцами
+    label.checkbox.checkbox-list__list-li
+        input.checkbox__input(type="checkbox")
+        .checkbox__face
+        p.checkbox__text Можно пригласить гостей (до 10 человек)
+.space
+.space
+h3 Radio Buttons
+.radio-buttons
+    label.radio-buttons__libel
+        input.radio-buttons__input(type="radio" name="sex" value="Мужчина")
+        span.radio-buttons__face
+        p Мужчина
+    label.radio-buttons__libel
+        input.radio-buttons__input(type="radio" name="sex" value="Мужчина")
+        span.radio-buttons__face
+        p Женщина
+.space
+h3 Toggle
++toggle('Получать спецпредложения')
+.space
+h3.title-rich-checkbox Rich Checkbox Buttons
++rich-checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
++rich-checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера.')
+
+

@@ -1,0 +1,213 @@
+html{
+    background-color: #E5E5E5;
+}
+
+html,body,h1,h2,h3,h4,div,p,a,ul{
+    margin: 0;
+    padding: 0;
+}
+.space{
+    min-height: 40px;
+    max-width: 1160px;
+    margin:auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-family: Quicksand,"Open Sans",Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing:1.3px;
+
+    color: #1F2041;
+}
+h2{
+    font-family: Quicksand,"Open Sans",Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 19px;
+    line-height: 24px;
+    letter-spacing: 0px;
+    /* Dark 100% */
+
+    color: #1F2041;
+}
+h3{
+    font-family: Montserrat,Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 15px;
+    text-transform: uppercase;
+    
+
+color: #1F2041;
+}
+button{
+    border: none;
+    text-align: center;
+    text-transform: uppercase;
+
+    width: 150px;
+    padding-top: 14px;
+    padding-bottom: 13px;
+    padding-left: 18px;
+    margin-bottom: 28px;
+
+    border-radius: 22px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: 31px;
+    text-align: center;
+    p{
+        width: 100%;
+        padding-left: 9.5px;
+    }
+    img{
+        padding-right: 6px;
+    }
+}
+body{
+    font-family: Montserrat,"Open Sans",Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 1.5px;
+
+    color: rgba(31, 32, 65, 0.75);
+}
+
+//-----------------------vars-------------------
+$gray:rgba(31, 32, 65, 0.5);
+$black:#1F2041;
+
+//--------------------pug mixins----------------
+//############togle
+.toggle{
+    display: block;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.toggle-input{
+    display:none;
+}
+.toggle__face-checkbox{
+    display: inline-block;
+    width: 38px;
+    height: 18px;
+    position: relative;
+    border-radius: 10px;
+    border:1px $gray solid;
+}
+.toggle__face-checkbox::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+    transform: translate(3px,3px);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.toggle-input:checked+.toggle__face-checkbox::before{
+    background-color: #1BA4Fa;
+    transform: translate(24px,3px);
+}
+.toggle-text{
+    margin-left: 11px;
+    line-height: 0px;
+    padding-bottom: 5px;
+    letter-spacing: 1.1px;
+}
+//############checkbox-list
+
+.checkbox-list__title{
+    display: flex;
+    align-items: center;
+}
+.checkbox-list__checkbox{
+    display: none;
+}
+.checkbox-list__text{
+    letter-spacing: 0.9px;
+}
+.checkbox-list__icon{
+    order: 2;
+
+    width: 12px;
+    height: 8px;
+
+    margin-left: 27px;
+}
+
+.checkbox-list__checkbox:checked + .checkbox-list__container>.checkbox-list__title>.checkbox-list__icon{
+    transform: rotate(180deg);
+    
+}
+.checkbox-list__text{
+    order: 1;
+}
+.checkbox-list__list{
+    display: none;
+    margin-top: 15px;
+}
+.checkbox-list__checkbox:checked + .checkbox-list__container>.checkbox-list__list{
+    display: block;
+}
+//###################-----rich-checkbox----
+.rich-checkbox{
+    display: flex;
+}
+.rich-checkbox__container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 5px;
+    max-width: 236px;
+}
+.chackbox_subtitle{
+    margin-top: 6px;
+    
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: .75px
+    
+}
+.checkbox__title{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+//###################---room information---
+.room-information{
+    width: 275px;
+
+    margin-top: 20px;
+}
+.room-information__container{
+    display: flex;
+    margin-bottom: 20px;
+}
+.room-information__descriptions{
+    margin-left: 14px;
+}
+.room-information__title{
+    font-weight: bold;
+}
+.room-information__line{
+    width: 100%;
+
+    border-bottom: 1px solid $gray;
+}

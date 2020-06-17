@@ -20,20 +20,16 @@ const config = {
       template: './src/pages/index.pug'
     }),
     new HtmlWebpackPlugin({
-        filename: 'ap.html',
-        template: './src/pages/ap.pug'
-    }),
-    new HtmlWebpackPlugin({
         filename: 'HeadersFooters.html',
-        template: './src/pages/HeadersFooters.pug'
+        template: './src/pages/HeadersFooters/HeadersFooters.pug'
     }),
     new HtmlWebpackPlugin({
         filename: 'Cards.html',
-        template: './src/pages/Cards.pug'
+        template: './src/pages/Cards/Cards.pug'
     }),
     new HtmlWebpackPlugin({
         filename: 'FormElements.html',
-        template: './src/pages/FormElements.pug'
+        template: './src/pages/FormElements/FormElements.pug'
     }),
   ],
   module: {

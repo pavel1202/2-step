@@ -1,5 +1,6 @@
 .calendar{
     width: 318px;
+    position: relative;
     
     
     border: 1px $gray solid;
@@ -14,6 +15,7 @@
     padding-left: 22px;
     padding-right: 22px;
     padding-bottom: 20px;
+    z-index: 10;
 }
 .calendar__blank{
     display: flex;
@@ -26,10 +28,12 @@
 .calendar__arrow-left{
     cursor: pointer;
     width: 16px;
+    height: 24px;
 }
 .calendar__arrow-right{
     transform: rotate(180deg);
     width: 16px;
+    height: 24px;
 
     cursor: pointer;
 }

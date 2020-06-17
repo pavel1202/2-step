@@ -1,0 +1,35 @@
+mixin checkbox-list(title,list)
+  label.checkbox-list
+    input.checkbox-list__checkbox(type="checkbox")
+    .checkbox-list__container
+      .checkbox-list__title
+        img.checkbox-list__icon(src="./img/pointer.png", alt="pointer")
+        h3.checkbox-list__text=title
+      .checkbox-list__list
+        - for (var x = 0; x < list.length; x++)
+          label.checkbox
+            input.checkbox__input(type="checkbox")
+            .checkbox__face
+            p.checkbox__text=list[x]
+mixin room-information(title,subtitle,imgSrc,line)
+  .room-information
+    .room-information__container
+      img(src=imgSrc, alt="photo").room-information_photo
+      .room-information__descriptions
+        .room-information__title=title
+        .room-information__subtitle=subtitle
+    if line
+      .room-information__line
+
+mixin toggle(text)
+  label.toggle
+    input.toggle-input(type="checkbox" name="special-offers" value="Мужчина")
+    spun.toggle__face-checkbox
+    spun.toggle-text=text
+mixin rich-checkbox(title,subtitle)
+  label.rich-checkbox
+    input.checkbox__input(type="checkbox")
+    .checkbox__face
+    .rich-checkbox__container
+      .checkbox__title=title
+      p.chackbox_subtitle=subtitle

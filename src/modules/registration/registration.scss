@@ -123,50 +123,6 @@
 
 
 
-
-
-
-.registration__special-offers{
-    display: block;
-    height: 20px;
-    display: flex;
-    align-items: center;
-}
-.registration__special-offers-input{
-    display:none;
-}
-.registration__special-offers__face-checkbox{
-    display: inline-block;
-    width: 38px;
-    height: 18px;
-    position: relative;
-    border-radius: 10px;
-    border:1px $gray solid;
-}
-.registration__special-offers__face-checkbox::before{
-    content: "";
-    display: block;
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: rgba(31, 32, 65, 0.25);
-    border-radius: 10px;
-    transform: translate(3px,3px);
-    transition: 0.5s;
-    border-radius: 10px;
-}
-.registration__special-offers-input:checked+.registration__special-offers__face-checkbox::before{
-    background-color: #1BA4Fa;
-    transform: translate(24px,3px);
-}
-.registration__special-offers-text{
-    margin-left: 11px;
-    line-height: 0px;
-    padding-bottom: 5px;
-    letter-spacing: 1.1px;
-}
-
-
 .registration__payments{
     margin-top: 22px;
     background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);

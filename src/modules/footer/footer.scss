@@ -69,13 +69,7 @@ footer{
 .footer__sec-5{
     margin-right: 1px;
     width: 260px;
-    input{
-        letter-spacing:0.7px;
-        width: 260px;
-        height: 44px;
-        border: 1px solid $gray;
-        border-radius: 6px;
-        padding-left: 15px;
+    .container-subscription-text-field{
         margin-top: 20px;
     }
     p{
