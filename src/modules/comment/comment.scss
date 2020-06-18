@@ -1,0 +1,40 @@
+.comment{
+    display:flex;
+    flex-direction: column;
+}
+.comment__accoun-avatart{
+    display: flex;
+    width: 100%;
+    margin-bottom: 9px;
+}
+.comment__account-container{
+
+    margin-left: 9px;
+}
+.comment__name{
+    font-weight: bold;
+}
+.comment__avatar{
+    width: 44px;
+    height: 44px;
+
+    border: 2px solid #FFF;
+    border-radius: 50%;
+    text-overflow: clip;
+
+    background: url('../img/avatart.png') center;
+}
+.comment__container{
+    padding-left: 2px;
+    display: flex;
+}
+.comment__text{
+    max-width: 653px;
+    margin-left: 12px;
+
+
+    letter-spacing: 1px;
+}
+.comment__like{
+    margin-top: 2px;
+}

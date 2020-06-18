@@ -8,6 +8,11 @@ import './img/arrow.png';
 import './img/arrow.svg';
 import './img/insert_emoticon.svg';
 import './img/location_city.svg';
+import './img/avatart.png';
+import './img/heart.svg';
+import './img/heart-active.svg';
+import './img/star.svg';
+import './img/star-active.svg';
 
 
 
@@ -16,3 +21,6 @@ import './modules/calendar/calendar.js'
 import './modules/filter-date-dropdown/filter-date-dropdown.js'
 import './modules/date/date.js'
 import './modules/dropdown-guests/dropdown-guests.js'
+import './modules/range-slider/range-slider.js'
+import './modules/rate/rate.js'
+

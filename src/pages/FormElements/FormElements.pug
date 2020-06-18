@@ -58,8 +58,35 @@ h3 Radio Buttons
 h3 Toggle
 +toggle('Получать спецпредложения')
 .space
+h3 like button
+.conteiner-like-button
+    +like(2,false)
+    +like(12,true)
+.space
+h3 rate button
+include ../../modules/rate/rate
+.space
 h3.title-rich-checkbox Rich Checkbox Buttons
 +rich-checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
 +rich-checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера.')
-
-
+.space
+.space
+include ../../modules/comment/comment
++comment('Мурад Сарафанов','./img/avatart.png','5 дней назад','12','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+.space
+include ../../modules/range-slider/range-slider
+.space
+.space
+h3 BUTTON
+.space
+.conteiner__button
+    +button('CLICK ME',true)
+.space
+.conteiner__button
+    +button('CLICK ME',false)
+.space
+button.click-me CLICK ME
+.space
+.conteiner__button-big
+    +button('CLICK ME',true,'./img/arrow.png')
+.sapce

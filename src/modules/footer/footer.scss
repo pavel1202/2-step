@@ -24,14 +24,10 @@ footer{
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 80px;
-    @media (max-width:1030px) {
-        justify-content: space-around;
-    }
 }
 .footer__sec-1{
     width: 260px;
     color: $black;
-    // margin-right: 20px;
 }
 .footer__sec-1__logo {
     img{
@@ -80,7 +76,7 @@ footer{
         margin-left:20%;
     }
     @media (max-width:654px){
-        margin-left: 0px;
+        margin-left: 0;
     }
 }
 .footer__mini-menu__li{

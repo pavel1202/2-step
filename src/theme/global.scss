@@ -49,32 +49,78 @@ h3{
 
 color: #1F2041;
 }
+//======================buttons===========================
 button{
+    outline:none;
+    border:none;
+    background: none;
+}
+.button{
     border: none;
     text-align: center;
     text-transform: uppercase;
+    font-weight: bold;
+    font-family: Montserrat,'open sance';
 
-    width: 150px;
     padding-top: 14px;
     padding-bottom: 13px;
-    padding-left: 18px;
-    margin-bottom: 28px;
 
     border-radius: 22px;
     width: 100%;
     
     display: flex;
     justify-content: space-between;
+    align-items: center;
 
-    margin-top: 31px;
     text-align: center;
+    cursor: pointer;
     p{
         width: 100%;
-        padding-left: 9.5px;
+        color: #B59DFE;
+        font-size: 12px;
     }
     img{
         padding-right: 6px;
     }
+}
+.button:not(.button--with-background){
+    padding-top: 12px;
+    padding-bottom: 11px;
+    
+    color: #BC9CFF;
+
+    border: 2px solid #B59DFE;
+}
+.button:not(.button--with-background):active{
+    border: 2px solid #D3CFFE;
+}
+.button--with-background{
+    background: linear-gradient(180deg, #BC9CFF 0%, #8BA4F9 100%);
+    P{
+        color: white;
+    }
+}
+.button--with-background:active{
+    background:#D3CFFE;
+}
+.conteiner__button{
+    width: 99px;
+}
+.conteiner__button-big{
+    width: 280px;
+}
+//===================click-me================
+.click-me{
+    font-family: Montserrat;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    
+    color: #BC9CFF;
+    cursor: pointer;
+}
+.click-me:active{
+    color: rgba(31, 32, 65, 0.5);
 }
 body{
     font-family: Montserrat,"Open Sans",Arial, Helvetica, sans-serif;
@@ -210,4 +256,30 @@ $black:#1F2041;
     width: 100%;
 
     border-bottom: 1px solid $gray;
+}
+//===================== -heart- ============
+.like{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+    
+    
+
+    border: 1px solid rgba(31, 32, 65, 0.25);
+    border-radius: 16px;
+
+    background-color: white;
+    &__heart{
+        margin-left: 5px;
+    }
+    &__count{
+        margin-right: 7px;
+        
+        font-size: 10px;
+    }
+    &-active{
+        border:1px solid #BC9CFF;
+    }
 }

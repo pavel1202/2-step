@@ -33,3 +33,21 @@ mixin rich-checkbox(title,subtitle)
     .rich-checkbox__container
       .checkbox__title=title
       p.chackbox_subtitle=subtitle
+mixin like(count,active)
+  .like
+    if(active)
+      img.like__heart(src="./img/heart-active.svg", alt="heart")
+    else
+      img.like__heart(src="./img/heart.svg", alt="heart")
+    .like__count=count
+mixin button(text,background,img)
+  if(background)
+    button.button.button--with-background
+      p.text=text
+      if(img!=undefined)
+        img(src=img, alt="arrow")
+  else
+    button.button
+      p.text=text
+      if(img!=undefined)
+        img(src=img, alt="arrow")

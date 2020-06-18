@@ -1,0 +1,13 @@
+include ../../theme/mixins
+mixin comment(name,avatar,wasOnline,like,text)
+    .comment
+        .comment__accoun-avatart
+            .comment__avatar
+            .comment__account-container
+                .comment__name=name
+                .comment__was-online=wasOnline
+        .comment__container
+            .comment__like
+                +like(like,true) 
+            p.comment__text=text
+            

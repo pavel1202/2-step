@@ -1,6 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
-
+const webpack = require('webpack');
 
 
 const config = {
@@ -15,6 +15,10 @@ const config = {
     port: 3000,
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery'
+    }),
     new HtmlWebpackPlugin({
         filename: 'index.html',
       template: './src/pages/index.pug'
