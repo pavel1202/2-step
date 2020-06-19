@@ -1,3 +1,7 @@
+//-----------------------vars-------------------
+$gray:rgba(31, 32, 65, 0.5);
+$black:#1F2041;
+//----------------------------------------------
 html{
     background-color: #E5E5E5;
 }
@@ -60,7 +64,7 @@ button{
     text-align: center;
     text-transform: uppercase;
     font-weight: bold;
-    font-family: Montserrat,'open sance';
+    font-family: Montserrat,Arial;
 
     padding-top: 14px;
     padding-bottom: 13px;
@@ -133,9 +137,7 @@ body{
     color: rgba(31, 32, 65, 0.75);
 }
 
-//-----------------------vars-------------------
-$gray:rgba(31, 32, 65, 0.5);
-$black:#1F2041;
+
 
 //--------------------pug mixins----------------
 //############togle
@@ -282,4 +284,33 @@ $black:#1F2041;
     &-active{
         border:1px solid #BC9CFF;
     }
+}
+//#######################--=LIST=--
+.bullet-list{
+    width: 280px;
+}
+.bullet-list__li:not(:first-child){
+    margin-top: 10px;
+}
+.bullet-list__li{
+    padding-left: 20px;
+
+    font-size: 14px;
+
+    position: relative;
+}
+.bullet-list__li::before{
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+
+    position: absolute;
+    left: 0px;
+    top: 7px;
+
+    background-color: $gray;
+
+    border-radius: 50%;
+
 }

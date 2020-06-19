@@ -19,9 +19,8 @@ include ../../theme/mixins
         input.registration__email(type="email" placeholder="Email")
         input.registration__password(type="password" placeholder="Пароь")
         +toggle('Получать спецпредложения')
-        button.registration__payments
+        button.registration__payments.button
             p перейти к оплате
             img(src="./img/arrow.png", alt="arrow")
         p.registration__toxin Уже есть аккаунт на Toxin
-        button.registration_enter 
-            p ВОЙТИ
+        button.registration_enter.button  ВОЙТИ
