@@ -23,4 +23,6 @@ import './modules/date/date.js'
 import './modules/dropdown-guests/dropdown-guests.js'
 import './modules/range-slider/range-slider.js'
 import './modules/rate/rate.js'
+import './modules/pagination/pagination.js'
+
 
