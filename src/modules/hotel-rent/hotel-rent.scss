@@ -1,0 +1,51 @@
+.hotel-rent{
+    box-sizing: border-box;
+    width: 380px;
+    padding: 40px 30px 30px;
+
+    background-color: white;
+
+    border-radius: 4px;
+}
+.hotel-rent__content-title{
+    display: flex;
+    justify-content: space-between;
+}
+.hotel-rent__number{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    width: 110px;
+    margin: 0;
+
+    text-align: end;
+}
+.hotel-rent__number-number{
+    padding-bottom: 4px;
+}
+.hotel-rent__price {
+    display: flex;
+    justify-content: space-between;
+    width: 100px;
+
+    align-items: flex-end;
+
+
+    &-count{
+        letter-spacing: 0px;
+    }
+    &-text{
+        font-size: 12px;
+    }
+}
+.hotel-rent__date{
+    margin-top: 20px;
+}
+.hotel-rent__date-titles{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+}
+.hotel-rent__date-title{
+    width: 150px;
+}
