@@ -1,5 +1,6 @@
 
 //-------------------imports--------------------
+@import "~bootstrap/scss/bootstrap";
 @import "./global.scss";
 @import url('../fonts/fonts.scss');
 @import "../modules/header/header";
@@ -21,6 +22,9 @@
 @import "../modules/comment/comment";
 @import "../modules/range-slider/range-slider";
 @import "../modules/pagination/pagination";
+@import "../modules/enter/enter";
+@import "../modules/hotel-card/hotel-card";
+@import "../modules/rate/rate";
 
 
 

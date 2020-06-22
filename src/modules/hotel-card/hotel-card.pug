@@ -1,0 +1,37 @@
+include ../rate/rate
+mixin hotel-card(images,numberCount,numberType,priceCount,rate,commentCount)
+    .hotel-card
+        .hotel-card__carousel
+            div(id="carouselExampleIndicators" class="carousel slide" data-ride="carousel")
+                ol(class="carousel-indicators")
+                    if(images!=undefined)
+                        each image,index in images
+                            if(index==0)
+                                li(data-target="#carouselExampleIndicators" data-slide-to=index class="active")
+                            else
+                                li(data-target="#carouselExampleIndicators" data-slide-to=index)
+                div.carousel-inner
+                    each image,index in images
+                        if(index==0)
+                            div(class="carousel-item active")
+                                img(class="d-block w-100" src=image alt=index+"слайд")
+                        else
+                            div(class="carousel-item")
+                                img(class="d-block w-100" src=image alt=index+"слайд")
+                a(class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev")
+                a(class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next")
+        .hotel-card__blank
+            .hotel-card__number
+                h3.hotel-card__number-number № 
+                h2.hotel-card__number-count=numberCount
+                .hotel-card__number-type=numberType
+            .hotel-card__price
+                .hotel-card__price-count=priceCount
+                .hotel-card__text в сутки
+        .hotel-card__footer
+            +rate(rate)
+            a(href="#").hotel-card__comment 
+                .hotel-card__comment-count=commentCount
+                .hotel-card__comment-text Отзывов
+
+

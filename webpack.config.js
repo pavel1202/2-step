@@ -76,6 +76,7 @@ const config = {
               'style-loader',
               // Translates CSS into CommonJS
               'css-loader',
+              
               // Compiles Sass to CSS
               'sass-loader',
             ],

@@ -1,0 +1,13 @@
+include ../../theme/mixins
+.enter
+    .enter__conteiner
+        h1.enter__title Войти
+        input.enter__email.text-field(type="email" placeholder="Email")
+        input.enter__passeord.text-field(type="passeord" placeholder="Пароль")
+        +button('войти',true)
+        .enter__footer
+            a(href="#").enter__footer-text Нет аккаунта на Toxin?
+            .conteiner__button
+                +button('создать',false)
+
+

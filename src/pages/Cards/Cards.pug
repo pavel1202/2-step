@@ -1,3 +1,5 @@
+include ../../modules/hotel-card/hotel-card
+
 head
     meta(name="viewport" content="width=device-width, initial-scale=1.0")
 body.cards
@@ -7,3 +9,12 @@ body.cards
         include ../../modules/registration/registration
     .cards__container
         include ../../modules/hotel-rent/hotel-rent
+        .space
+        include ../../modules/enter/enter
+        .space
+    .cards__container
+            +hotel-card(['./img/hotel-room.png','./img/hotel-room1.png','./img/hotel-room2.png','./img/hotel-room3.png'],888,'люкс','9 990',5,145)
+            .space
+            +hotel-card(['./img/hotel-room1.png','./img/hotel-room.png','./img/hotel-room2.png','./img/hotel-room3.png'],840,'','9 900',4,65)
+
+    

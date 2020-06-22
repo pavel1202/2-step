@@ -1,0 +1,30 @@
+.enter{
+    box-sizing: border-box;
+    width: 380px;
+    padding-left: 30px;
+    padding-top: 40px;
+    padding-bottom: 32px;
+    padding-right: 30px;
+
+    background-color: white;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+}
+.enter__email{
+    margin-top: 20px;
+}
+.enter__passeord{
+    margin-top: 10px;
+    margin-bottom: 22px;
+}
+.enter__footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 32px;
+    &-text{
+        letter-spacing: 0.6px;
+        color: $black;
+    }
+}

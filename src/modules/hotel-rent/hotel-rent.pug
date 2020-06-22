@@ -14,15 +14,18 @@ include ../../theme/mixins
                 h3.hotel-rent__date-title прибытие
                 h3.hotel-rent__date-title выезд
             include ../date/date
-            
-
         h3.hotel-rent__guests-black ГОСТИ
         include ../dropdown-guests/dropdown-guests
         .hotel-rent__prices
-            .hotel-rent__prices-li
+            .hotel-rent__prices-li 
                 .hotel-rent__prices-text 9 990₽ х 4 суток
+                .hotel-rent__prices-price 39 960₽
+            .hotel-rent__prices-li
                 .hotel-rent__prices-text Сбор за услуги: скидка 2 179₽
+                .hotel-rent__prices-price 0₽
+            .hotel-rent__prices-li 
                 .hotel-rent__prices-text Сбор за дополнительные услуги
+                .hotel-rent__prices-price 300₽
         .total-amount
             h2.total-amount-text Итого
             .total-amount-line
