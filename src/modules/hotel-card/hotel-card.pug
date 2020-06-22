@@ -2,14 +2,14 @@ include ../rate/rate
 mixin hotel-card(images,numberCount,numberType,priceCount,rate,commentCount)
     .hotel-card
         .hotel-card__carousel
-            div(id="carouselExampleIndicators" class="carousel slide" data-ride="carousel")
+            div(id="carouselExampleIndicators"+numberCount class="carousel slide" data-ride="carousel")
                 ol(class="carousel-indicators")
                     if(images!=undefined)
                         each image,index in images
                             if(index==0)
-                                li(data-target="#carouselExampleIndicators" data-slide-to=index class="active")
+                                li(data-target="#carouselExampleIndicators"+numberCount data-slide-to=index class="active")
                             else
-                                li(data-target="#carouselExampleIndicators" data-slide-to=index)
+                                li(data-target="#carouselExampleIndicators"+numberCount data-slide-to=index)
                 div.carousel-inner
                     each image,index in images
                         if(index==0)
@@ -18,8 +18,8 @@ mixin hotel-card(images,numberCount,numberType,priceCount,rate,commentCount)
                         else
                             div(class="carousel-item")
                                 img(class="d-block w-100" src=image alt=index+"слайд")
-                a(class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev")
-                a(class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next")
+                a(class="carousel-control-prev" href="#carouselExampleIndicators"+numberCount role="button" data-slide="prev")
+                a(class="carousel-control-next" href="#carouselExampleIndicators"+numberCount role="button" data-slide="next")
         .hotel-card__blank
             .hotel-card__number
                 h3.hotel-card__number-number № 

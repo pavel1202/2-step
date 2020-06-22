@@ -40,6 +40,7 @@
         font-size: 12px;
     }
 }
+
 .hotel-rent__date{
     margin-top: 20px;
 }
@@ -70,6 +71,22 @@
 }
 .hotel-rent__prices-li:not(:first-child){
     margin-top: 13px;
+    position: relative;
+    .hotel-rent__prices-text::before{
+        content: 'i';
+
+        position: absolute;
+        left: 230px;
+        width: 20px;
+        height: 20px;
+
+        text-align: center;
+        line-height: 18px;
+        color:$gray;
+
+        border:1px solid $gray;
+        border-radius: 50%;
+    }
 }
 .total-amount{
     display: flex;
