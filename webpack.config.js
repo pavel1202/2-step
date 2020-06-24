@@ -35,6 +35,18 @@ const config = {
         filename: 'FormElements.html',
         template: './src/pages/FormElements/FormElements.pug'
     }),
+    new HtmlWebpackPlugin({
+        filename: 'ColorsType.html',
+        template: './src/pages/ColorsType/ColorsType.pug'
+    }),
+    new HtmlWebpackPlugin({
+        filename: 'LandingPage.html',
+        template: './src/pages/LandingPage/LandingPage.pug'
+    }),
+    new HtmlWebpackPlugin({
+        filename: 'search-room.html',
+        template: './src/pages/search-room/search-room.pug'
+    }),
   ],
   module: {
     rules: [

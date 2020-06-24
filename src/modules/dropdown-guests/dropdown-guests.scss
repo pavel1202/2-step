@@ -1,5 +1,7 @@
 .dropdown-guests{
     width: 320px;
+    position: relative;
+    z-index: 10;
  }
  
  .dropdown-guests__container{
@@ -23,4 +25,10 @@
          height: 8px;
          margin-right: 15px;
      }
+ }
+ .dropdown-guests_dropdown-conteiner{
+     position: absolute;
+     top: 40px;
+     z-index: -1;
+     
  }

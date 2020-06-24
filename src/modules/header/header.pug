@@ -1,10 +1,11 @@
+
 header
   .header
     .header__container
      .header__main-menu 
-      .header__container__logo
-        img(src="./img/Logo.png", alt="img")
-      .header__menu
+      a(href="#").header__container__logo
+        img(src="./img/Logo.svg", alt="logo")
+      nav.header__menu
         include ../menu/menu
       .header__buttons
         div.header__login

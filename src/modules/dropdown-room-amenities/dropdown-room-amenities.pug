@@ -1,0 +1,8 @@
+include ../dropdown/dropdown
+
+.dropdown-room-amenities
+    .dropdown-room-amenities__container
+        p.dropdown-room-amenities__text Сколько гостей
+        img(src="./img/pointer.png", alt="pointer")
+    .dropdown-room-amenities_dropdown-conteiner
+        +dropdown(['взрослые','дети','младенцы'])

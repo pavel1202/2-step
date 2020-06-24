@@ -32,9 +32,12 @@
 }
 .hotels__date{
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
 }
 .hotels__date__descriptions{
-    margin-bottom: 4px;
+    width: 150px;
 }
 .hotels__guests{
     margin-top: 21px;

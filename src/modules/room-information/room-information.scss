@@ -1,0 +1,20 @@
+.room-information{
+    width: 275px;
+
+    margin-top: 20px;
+}
+.room-information__container{
+    display: flex;
+    margin-bottom: 20px;
+}
+.room-information__descriptions{
+    margin-left: 14px;
+}
+.room-information__title{
+    font-weight: bold;
+}
+.room-information__line{
+    width: 100%;
+
+    border-bottom: 1px solid $gray;
+}

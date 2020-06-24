@@ -45,9 +45,9 @@ mixin button(text,background,img)
     button.button.button--with-background
       p.text=text
       if(img!=undefined)
-        img(src=img, alt="arrow")
+        include ../img/arrow.svg
   else
     button.button
       p.text=text
       if(img!=undefined)
-        img(src=img, alt="arrow")
+        include ../img/arrow.svg

@@ -1,4 +1,5 @@
-include ../../theme/mixins
+include ../../modules/toggle/toggle
+include ../../modules/button/button
 .registration
     .registration__container
         h1.registration__blank Регистрация аккаунта
@@ -18,9 +19,10 @@ include ../../theme/mixins
         h3.registration__login-details-blank данные для входа в сервис
         input.registration__email(type="email" placeholder="Email")
         input.registration__password(type="password" placeholder="Пароль")
-        +toggle('Получать спецпредложения')
-        button.registration__payments.button
-            p перейти к оплате
-            img(src="./img/arrow.png", alt="arrow")
-        p.registration__toxin Уже есть аккаунт на Toxin
-        button.registration_enter.button  ВОЙТИ
+        +toggle("Получать спецпредложения")
+        +button("перейти к оплате",true,"./img/arrow.png")
+        .registration_enterence
+            a(href="#").registration__toxin Уже есть аккаунт на Toxin
+            .conteiner__button
+                +button("ВОЙТИ")
+        //- button.registration_enter.button  

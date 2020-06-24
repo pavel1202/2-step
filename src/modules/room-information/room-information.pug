@@ -1,0 +1,9 @@
+mixin room-information(title,subtitle,imgSrc,line)
+  .room-information
+    .room-information__container
+      img(src=imgSrc, alt="photo").room-information_photo
+      .room-information__descriptions
+        .room-information__title=title
+        .room-information__subtitle=subtitle
+    if line
+      .room-information__line

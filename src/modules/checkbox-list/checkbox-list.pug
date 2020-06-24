@@ -1,0 +1,13 @@
+mixin checkbox-list(title,list)
+  label.checkbox-list
+    input.checkbox-list__checkbox(type="checkbox")
+    .checkbox-list__container
+      .checkbox-list__title
+        img.checkbox-list__icon(src="./img/pointer.png", alt="pointer")
+        h3.checkbox-list__text=title
+      .checkbox-list__list
+        - for (var x = 0; x < list.length; x++)
+          label.checkbox
+            input.checkbox__input(type="checkbox")
+            .checkbox__face
+            p.checkbox__text=list[x]

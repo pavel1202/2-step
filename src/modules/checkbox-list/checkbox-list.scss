@@ -1,0 +1,34 @@
+
+.checkbox-list__title{
+    display: flex;
+    align-items: center;
+}
+.checkbox-list__checkbox{
+    display: none;
+}
+.checkbox-list__text{
+    letter-spacing: 0.9px;
+}
+.checkbox-list__icon{
+    order: 2;
+
+    width: 12px;
+    height: 8px;
+
+    margin-left: 27px;
+}
+
+.checkbox-list__checkbox:checked + .checkbox-list__container>.checkbox-list__title>.checkbox-list__icon{
+    transform: rotate(180deg);
+    
+}
+.checkbox-list__text{
+    order: 1;
+}
+.checkbox-list__list{
+    display: none;
+    margin-top: 15px;
+}
+.checkbox-list__checkbox:checked + .checkbox-list__container>.checkbox-list__list{
+    display: block;
+}

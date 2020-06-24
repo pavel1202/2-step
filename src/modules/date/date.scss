@@ -1,49 +1,53 @@
 .date{
-    width: 320px;
+  width: 320px;
 }
 .date__container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  width: 100%;
 }
 .date_wrapper-text{
-    margin-bottom: 2px;
+  margin-bottom: 2px;
 }
 .date__input{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 148px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 150px;
 
 
-    background-color: #fff;
-    border: 1px $gray solid;
-    border-radius: 4px;
+  background-color: #fff;
+  border: 1px $gray solid;
+  border-radius: 4px;
 }
 .date__input-datepicker{
     
-    width: 120px;
-    padding-left: 15px;
-    padding-top: 8px;
-    padding-bottom: 11px;
+  width: 120px;
+  padding-left: 15px;
+  padding-top: 8px;
+  padding-bottom: 11px;
 
-    letter-spacing:1.2px;
-    font-family: Montserrat,Open Sans,Arial, Helvetica, sans-serif;
+  letter-spacing:1.2px;
+  font-family: Montserrat,Open Sans,Arial, Helvetica, sans-serif;
+  color: $gray;
 
-    border:none;
-    border-top-left-radius: 8px;
-    border-bottom-left-radius: 8px;
+  border:none;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
-
+.date__input-datepicker:focus{
+  outline: none;
+}
 
 .date__pointer{
-    width: 12px;
-    height: 8px;
-    margin-right: 16px;
+  width: 12px;
+  height: 8px;
+  margin-right: 16px;
 }
 .date__calendar{
-    margin-top: 5px;
-    position: absolute;
+  margin-top: 5px;
+  position: absolute;
+  z-index: 11;
 }

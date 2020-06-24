@@ -1,0 +1,19 @@
+.search-room{
+    background-color: white;
+}
+.search-room__conteiner{
+    display: flex;
+    max-width: 1160px;
+    margin: 0 auto;
+}
+.search-room__navigation{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 266px;
+}
+.search-room__title-filter-date-dropdown{
+    margin-bottom: 5px;
+}
+.search-room__pages-list{
+    display: none;
+}

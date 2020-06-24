@@ -2,6 +2,16 @@
 //-------------------imports--------------------
 @import "~bootstrap/scss/bootstrap";
 @import "./global.scss";
+
+//---------------------pages---------------------
+@import "../pages/Cards/Cards.scss";
+@import "../pages/FormElements/FormElements.scss";
+@import "../pages/ColorsType/ColorsType.scss";
+@import "../pages/LandingPage/LandingPage.scss";
+@import "../pages/search-room/search-room.scss";
+
+
+//---------------------blocks--------------------
 @import url('../fonts/fonts.scss');
 @import "../modules/header/header";
 @import "../modules/menu/menu";
@@ -13,8 +23,6 @@
 @import "../modules/date/date";
 @import "../modules/registration/registration";
 @import "../modules/hotel-rent/hotel-rent";
-@import "../pages/Cards/Cards.scss";
-@import "../pages/FormElements/FormElements.scss";
 @import "../modules/dropdown/dropdown";
 @import "../modules/filter-date-dropdown/filter-date-dropdown";
 @import "../modules/calendar/calendar";
@@ -25,6 +33,15 @@
 @import "../modules/enter/enter";
 @import "../modules/hotel-card/hotel-card";
 @import "../modules/rate/rate";
+@import "../modules/checkbox-list/checkbox-list";
+@import "../modules/room-information/room-information";
+@import "../modules/toggle/toggle";
+@import "../modules/rich-checkbox/rich-checkbox";
+@import "../modules/like/like";
+@import "../modules/button/button";
+@import "../modules/checkbox/checkbox";
+@import "../modules/dropdown-room-amenities/dropdown-room-amenities";
+
 
 
 

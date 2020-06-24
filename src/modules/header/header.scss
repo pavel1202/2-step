@@ -9,7 +9,8 @@ header{
     display: block;
     padding-top:15px;
     padding-bottom:15px;
-    width: 1160px;
+    width: 100%;
+    max-width: 1160px;
 }
 .header__container{
     border-top:100px;
@@ -84,6 +85,9 @@ header{
     border: 1.5px #BC9CFF solid;
     border-radius: 21px;
     }
+    a:active{
+        opacity: 0.5;
+    }
 
 }
 .header__menu{
@@ -126,6 +130,10 @@ header{
         padding-top:10px;
         padding-bottom: 10px;
         padding-left:19px;
+        
+    }
+    a:active{
+        opacity: 0.5;
     }
     
 }

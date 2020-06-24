@@ -1,9 +1,10 @@
 import './theme/enter.scss';
-import Icon1 from'./img/Logo.png';
+import './img/Logo.png';
+import './img/Logo.svg';
 import './img/pointer.png';
-import './img/messengers/facebook.png';
-import './img/messengers/instagram.png';
-import './img/messengers/twitter.png';
+import './img/messengers/facebook.svg';
+import './img/messengers/instagram.svg';
+import './img/messengers/twitter.svg';
 import './img/arrow.png';
 import './img/arrow.svg';
 import './img/insert_emoticon.svg';
@@ -17,6 +18,7 @@ import './img/hotel-room.png';
 import './img/hotel-room1.png';
 import './img/hotel-room2.png';
 import './img/hotel-room3.png';
+import './img/landing-background.png';
 
 
 

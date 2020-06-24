@@ -1,9 +1,11 @@
 .calendar
     .calendar__container
         .calendar__blank
-            img(src="./img/arrow.svg", alt="arrow").calendar__arrow-left
+            .calendar__arrow-left
+                include ../../img/arrow.svg
             h2.calendar__month Август 2019
-            img(src="./img/arrow.svg", alt="arrow").calendar__arrow-right
+            .calendar__arrow-right
+                include ../../img/arrow.svg
         ul.calendar__weekday
             li.calendar__weekday-day Пн
             li.calendar__weekday-day Вт

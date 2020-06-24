@@ -1,0 +1,40 @@
+include ../../modules/head/head
+include ../../modules/checkbox-list/checkbox-list
+include ../../modules/rich-checkbox/rich-checkbox
+include ../../modules/checkbox/checkbox
+.search-room
+    include ../../modules/header/header
+    .search-room__conteiner
+        nav.search-room__navigation
+            h3.search-room__title-filter-date-dropdown даты пребывания в отеле
+            include ../../modules/filter-date-dropdown/filter-date-dropdown
+            h3.search-room__title-dropdown-guests гости
+            include ../../modules/dropdown-guests/dropdown-guests
+            include ../../modules/range-slider/range-slider
+            p.search-room__range-slider-descriptions Стоимость за сутки пребывания в номере
+            h3.search-room__title-checkbox Checkbox Buttons
+            +checkbox('Можно курить')
+            +checkbox('Можно с питомцами')
+            +checkbox('Можно пригласить гостей (до 10 человек)')
+            h3.search-room__title-rich-checkbox доступность
+            +rich-checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
+            +rich-checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера.')
+        main.search-room__content 
+            include ../../modules/pagination/pagination
+            ul.search-room__pages-list.paginationTable.list-group
+                li.tableItem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi at nostrum ab, aut cum, omnis dicta itaque laudantium id maxime veniam expedita tempore ad consectetur officiis incidunt suscipit architecto molestiae.
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+                li.tableItem 
+    include ../../modules/footer/footer

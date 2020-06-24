@@ -1,0 +1,8 @@
+mixin rich-checkbox(title,subtitle)
+  label.rich-checkbox
+    input.rich-checkbox__input(type="checkbox")
+    .rich-checkbox__face
+    .rich-checkbox__container
+      .rich-checkbox__title=title
+      if(subtitle!=undefined)
+        p.rich-chackbox_subtitle=subtitle

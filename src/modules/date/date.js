@@ -35,8 +35,8 @@ function date(dateDOM){
         console.log(dateDOM)
         console.log(calendar.visibil);
         if(calendar.visibil == 'visible')
-            dateDOM.getElementsByClassName('date__input-datepicker')[0].innerHTML = `${date1.getDate()} - ${calendar.monthName[date1.getMonth()]}`;
-            dateDOM.getElementsByClassName('date__input-datepicker')[1].innerHTML = `${date2.getDate()} - ${calendar.monthName[date2.getMonth()]}`;
+            dateDOM.getElementsByClassName('date__input-datepicker')[0].value = `${date1.getDate()} - ${calendar.monthName[date1.getMonth()]}`;
+            dateDOM.getElementsByClassName('date__input-datepicker')[1].value = `${date2.getDate()} - ${calendar.monthName[date2.getMonth()]}`;
     });
 
     

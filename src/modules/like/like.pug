@@ -1,0 +1,7 @@
+mixin like(count,active)
+  .like
+    if(active)
+      img.like__heart(src="./img/heart-active.svg", alt="heart")
+    else
+      img.like__heart(src="./img/heart.svg", alt="heart")
+    .like__count=count

@@ -27,15 +27,26 @@
 
 .calendar__arrow-left{
     cursor: pointer;
-    width: 16px;
-    height: 24px;
+    width: 20px;
+    height: 20px;
+    transform: rotate(180deg);
+    .arrow{
+        fill:#BC9CFF;
+    }
 }
 .calendar__arrow-right{
-    transform: rotate(180deg);
     width: 16px;
     height: 24px;
 
     cursor: pointer;
+    .arrow{
+        fill:#BC9CFF;
+    }
+}
+.calendar__arrow-left:hover,.calendar__arrow-right:hover{
+    .arrow{
+        fill:#66D2EA;
+    }
 }
 .calendar__weekday{
     display: flex;

@@ -1,0 +1,39 @@
+.toggle{
+    display: block;
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+.toggle-input{
+    display:none;
+}
+.toggle__face-checkbox{
+    display: inline-block;
+    width: 38px;
+    height: 18px;
+    position: relative;
+    border-radius: 10px;
+    border:1px $gray solid;
+}
+.toggle__face-checkbox::before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: rgba(31, 32, 65, 0.25);
+    border-radius: 10px;
+    transform: translate(3px,3px);
+    transition: 0.5s;
+    border-radius: 10px;
+}
+.toggle-input:checked+.toggle__face-checkbox::before{
+    background-color: #1BA4Fa;
+    transform: translate(24px,3px);
+}
+.toggle-text{
+    margin-left: 11px;
+    line-height: 0px;
+    padding-bottom: 5px;
+    letter-spacing: 1.1px;
+}

@@ -1,5 +1,5 @@
 .registration{
-    width: 320px;
+    max-width: 380px;
     padding-top: 40px;
     padding-left: 30px;
     padding-right: 30px;
@@ -134,28 +134,14 @@
         color: white;
     }
 }
-
-.registration__toxin{
-    margin-top: 10px;
-    letter-spacing: 0.8px;
-    width: 190px;
+.registration_enterence{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:30px
 }
-
-.registration_enter{
-    display: inline-block;
-    width: 99px;
-    height: 44px;
-    margin: 0;
-    border: 2px #BC9CFF solid;
-    position: relative;
-    background-color: #fff;
-
-    p{
-        margin: 0;
-        position: absolute;
-        left: -10px;
-        top: 14px;
-        color: #BC9CFF;
-        font-weight: bold;
-    }
+.registration__toxin{
+    letter-spacing: 0.8px;
+    color: $black;
 }

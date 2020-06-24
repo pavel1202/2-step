@@ -1,0 +1,68 @@
+.LandingPage{
+    min-width: 600px;
+    overflow-x: hidden;
+}
+.LandingPage__conteiner{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+}
+.LandingPage__conteint{
+    background: url('../img/landing-background.png') no-repeat center;
+    
+    
+    @media (max-width: 250vh) {
+        background-size: 200vh;
+    }
+}
+
+
+.LandingPage__conteint{
+    
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+   
+    @media (max-height: 606px) {
+        padding-top: 20px;
+    }
+    @media (min-height: 607px) {
+        padding-top: 70px;
+    }
+    
+}
+.LandingPage__conteint-conteiner{ 
+    width: 100%;
+    max-width: 1160px;
+    min-width: 600px;
+    margin: 0 auto;  
+    @media (max-width: 700px) {
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+    @media (max-width: 600px){
+        margin-left: 10px;
+    }
+       
+}
+.LandingPage__description{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-grow: 1;
+    width: 100%;
+    max-width: 1160px;
+    min-width: 600px;
+    margin: 0 auto;
+    color: $black;
+}
+.LandingPage__description-text{   
+    width: 297px;
+    margin-bottom: 20px;
+    text-align: right;
+    @media (max-width: 700px) {
+        margin: 0 auto;
+    }
+}
