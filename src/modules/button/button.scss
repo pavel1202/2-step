@@ -11,8 +11,8 @@ button{
     font-weight: bold;
     font-family: Montserrat,Arial;
 
-    padding-top: 14px;
-    padding-bottom: 13px;
+    padding-top: 10px;
+    padding-bottom: 10px;
 
     border-radius: 22px;
     width: 100%;
@@ -36,10 +36,8 @@ button{
 
     
 }
+
 .button:not(.button--with-background){
-    padding-top: 12px;
-    padding-bottom: 11px;
-    
     color: #BC9CFF;
 
     border: 2px solid #B59DFE;
@@ -56,6 +54,7 @@ button{
 .button--with-background:active{
     background:#D3CFFE;
 }
+
 .conteiner__button{
     width: 99px;
 }

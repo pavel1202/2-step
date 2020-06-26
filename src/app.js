@@ -32,6 +32,7 @@ import './img/hotels__roomDetails1.png';
 import './img/hotels__roomDetails2.png';
 import './img/comfort.svg';
 import './img/avatar1.png';
+import './img/registration-background.png';
 
 
 

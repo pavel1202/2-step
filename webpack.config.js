@@ -44,12 +44,20 @@ const config = {
         template: './src/pages/LandingPage/LandingPage.pug'
     }),
     new HtmlWebpackPlugin({
-        filename: 'RoomDetails.html',
+        filename: 'search-room.html',
         template: './src/pages/search-room/search-room.pug'
     }),
     new HtmlWebpackPlugin({
         filename: 'RoomDetails.html',
         template: './src/pages/RoomDetails/RoomDetails.pug'
+    }),
+    new HtmlWebpackPlugin({
+        filename: 'Registration.html',
+        template: './src/pages/Registration-page/Registration-page.pug'
+    }),
+    new HtmlWebpackPlugin({
+        filename: 'Sign-in.html',
+        template: './src/pages/Sign-in/Sign-in.pug'
     }),
   ],
   module: {
