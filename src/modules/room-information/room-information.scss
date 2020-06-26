@@ -7,8 +7,14 @@
     display: flex;
     margin-bottom: 20px;
 }
+.room-information__photo-container{
+    min-width: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .room-information__descriptions{
-    margin-left: 14px;
+    margin-left: 15px;
 }
 .room-information__title{
     font-weight: bold;

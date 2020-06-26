@@ -1,7 +1,6 @@
 footer{
     width: 100%;
     background-color: white;
-    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
 
     display: flex;
     justify-content: space-around;
@@ -17,6 +16,12 @@ footer{
     padding-top: 100px;
     
     min-width: 600px;
+}
+.footer--shadow{
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.2);
+}
+.footer--line{
+    border-top: 1px $gray solid;
 }
 .footer__container{
     width: 1160px;

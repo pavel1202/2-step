@@ -44,8 +44,12 @@ const config = {
         template: './src/pages/LandingPage/LandingPage.pug'
     }),
     new HtmlWebpackPlugin({
-        filename: 'search-room.html',
+        filename: 'RoomDetails.html',
         template: './src/pages/search-room/search-room.pug'
+    }),
+    new HtmlWebpackPlugin({
+        filename: 'RoomDetails.html',
+        template: './src/pages/RoomDetails/RoomDetails.pug'
     }),
   ],
   module: {

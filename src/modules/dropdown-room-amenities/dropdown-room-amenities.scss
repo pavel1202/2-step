@@ -1,7 +1,8 @@
 .dropdown-room-amenities{
-    width: 320px;
+    width: 100%;
+    max-width: 266px;
     position: relative;
-    z-index: 10;
+    z-index: 1;
  }
  
  .dropdown-room-amenities__container{
@@ -27,8 +28,8 @@
      }
  }
  .dropdown-room-amenities_dropdown-conteiner{
-     position: absolute;
-     top: 40px;
+     width: 100%;
+     position: relative;
      z-index: -1;
      
  }

@@ -1,0 +1,45 @@
+include ../../modules/head/head
+include ../../modules/footer/footer
+include ../../modules/room-information/room-information
+include ../../modules/comment/comment
+
+.RoomDetails
+    .RoomDetails__conteiner
+        include ../../modules/header/header
+        .RoomDetails__conteiner-images
+            .RoomDetails__left-image
+            .RoomDetails__right-image
+                .RoomDetails__right-top-image
+                .RoomDetails__right-bottom-image
+        main.RoomDetails__content
+            .RoomDetails__content-container
+                .RoomDetails__content-intelligence-and-impressions
+                    .RoomDetails__intelligence
+                        h2.RoomDetails__intelligence-title Сведения о номере
+                        +room-information('Комфорт','Шумопоглощающие стены','./img/insert_emoticon.svg',true)
+                        +room-information('Удобство','Окно в каждой из спален','./img/location_city.svg',true)
+                        +room-information('Уют','Номер оснащён камином','./img/comfort.svg',false)
+                    .RoomDetails__impressions
+                        h2.RoomDetails__impressions-title Впечатления от номера
+                        .RoomDetails__statistics
+                            .RoomDetails__statistics-graph(stroke-width="10")
+                                svg(class="chart" width="127" height="127" viewBox="0 0 35 35")
+                                    circle(class="unit" r="15.9" cx="50%" cy="50%" )
+                                    circle(class="unit" r="15.9" cx="50%" cy="50%")
+                                    circle(class="unit" r="15.9" cx="50%" cy="50%")
+                            ul.RoomDetails__statistics-list
+                                li.RoomDetails__statistics-li Великолепно
+                                li.RoomDetails__statistics-li Хорошо
+                                li.RoomDetails__statistics-li Удовлетворительно
+                                li.RoomDetails__statistics-li Разочарован
+                .RoomDetails__comment
+                    h2.RoomDetails__comment-title Отзывы посетителей номера
+                    +comment('Мурад Сарафанов','./img/avatar.png','5 дней назад','12','Великолепный матрас на кровати в основной спальне! А пуфик вообще потрясающий. И стены, действительно, шумоподавляющие. Выкрикивал комплименты повару — никто не жаловался из соседей.')
+                    +comment('Патрисия Стёклышкова','./img/avatar1.png','Неделю назад','2','Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент',true)
+                .RoomDetails__rules-and-cancel
+                    .RoomDetails__rules
+                        h2.RoomDetails__rules-title Правила
+                        ul.RoomDetails__list-rules
+                            li.RoomDetails__li-rules Нельзя с питомцами
+            include ../../modules/hotel-rent/hotel-rent
+    +footer("footer--line")

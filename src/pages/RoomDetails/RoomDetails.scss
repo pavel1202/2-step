@@ -1,0 +1,150 @@
+
+.RoomDetails__conteiner{
+  background-color: white;
+}
+.RoomDetails__conteiner-images{
+  display: flex;
+  max-width: 1439px;
+  min-width: 600px;
+  height: 484px;
+  margin: 0 auto;
+    
+}
+.RoomDetails__left-image{
+  height: 484px;
+  width: 68%;
+  background: url('../img/hotels__roomDetails.png') center no-repeat;
+}
+.RoomDetails__right-image{
+  width: 32%;
+}
+.RoomDetails__right-top-image{
+  height: 242px;
+  background: url('../img/hotels__roomDetails1.png') center no-repeat;
+}
+.RoomDetails__right-bottom-image{
+  height: 242px;
+  background: url('../img/hotels__roomDetails2.png') center no-repeat;
+}
+.RoomDetails__content{
+  padding-top: 72px;
+  display: flex;
+  
+  max-width: 1160px;
+  min-width: 600;
+  margin: 0 auto;
+}
+@media (max-width:1000px){
+  .RoomDetails__content{
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media (min-width:1001px){
+  .RoomDetails__content{
+    justify-content: space-between;
+  }
+}
+.RoomDetails__content-container{
+  width: 100%;
+  max-width: 681px;
+}
+.RoomDetails__content-intelligence-and-impressions{
+  display: flex;
+  width: 100%;
+  max-width: 691px;
+  justify-content: space-between;
+}
+.RoomDetails__intelligence>*:nth-child(n+2){
+  margin-left: 5px;
+}
+.RoomDetails__impressions-title{
+  margin-bottom: 18px;
+  padding-left: 2px;
+
+  letter-spacing: 1px;
+}
+.RoomDetails__statistics{
+  display: flex;
+  align-items: flex-end;
+}
+
+.RoomDetails__statistics-graph{
+  fill: none;
+  stroke-width: 1;
+  position: relative;
+}
+.RoomDetails__statistics-graph::before{
+  content: '260';
+  position: absolute;
+  top: 40px;
+  left: 43px;
+
+  letter-spacing: 0px;
+  color: #BC9CFF;
+  font-size: 24px;
+}
+.RoomDetails__statistics-graph::after{
+  content: 'голосов';
+  position: absolute;
+  top: 62px;
+  left: 33px;
+
+  color: #BC9CFF;
+  font-size: 14px;
+}
+.unit:nth-child(1) {
+  stroke: #AF9EFE;
+  stroke-dasharray: 24 500;
+  stroke-dashoffset: -75;
+}
+
+.unit:nth-child(2) {
+  stroke: #6FCF9B;
+  stroke-dasharray: 24 100;
+  stroke-dashoffset: 0;
+}
+
+.unit:nth-child(3) {
+  stroke: #FFE19C;;
+  stroke-dasharray: 49 100;
+  stroke-dashoffset: -25;
+}
+.RoomDetails__statistics-list{
+  margin-left: 41px;
+  margin-bottom: 3px;
+}
+.RoomDetails__statistics-li{
+  position: relative;
+}
+.RoomDetails__statistics-li::before{
+  content: '';
+  position: absolute;
+  left: -15px;
+  top: 7px;
+  display: block;
+  width: 10px;
+  height: 10px;
+
+  border-radius: 50%;
+}
+.RoomDetails__statistics-li:nth-child(1)::before{
+  background-color: #F4CA95;
+}
+.RoomDetails__statistics-li:nth-child(2)::before{
+  background-color: #65C7C5;
+}
+.RoomDetails__statistics-li:nth-child(3)::before{
+  background-color: #9798F0;
+}
+.RoomDetails__statistics-li:nth-child(4)::before{
+  background-color: #696E7F;
+}
+.RoomDetails__comment>*:nth-child(n+3){
+  margin-top: 24px;
+}
+.RoomDetails__comment-title{
+  margin-bottom: 19px;
+  margin-top: 13px;
+  letter-spacing: 0.8px;
+}

@@ -1,51 +1,52 @@
-footer
-    .footer__container
-        .footer__sec-1
-            a(href="").footer__sec-1__logo 
-                img(src="./img/Logo.svg", alt="logo")
-            p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
-        .footer__sec-2
-            ul.footer__sec-2-mini-menu-1
-                li.footer__mini-menu__li.footer__mini-menu__li--main 
-                    a(href="#") NAVIGATION
-                li.footer__mini-menu__li 
-                    a(href="#") About US
-                li.footer__mini-menu__li 
-                    a(href="#") News
-                li.footer__mini-menu__li 
-                    a(href="#") Support
-                li.footer__mini-menu__li 
-                    a(href="#") Products
-        .footer__sec-3
-            ul.footer__sec-3-mini-menu-2
-                li.footer__mini-menu__li.footer__mini-menu__li--main 
-                    a(href="#") ABOUT US
-                li.footer__mini-menu__li 
-                    a(href="#") Who we are
-                li.footer__mini-menu__li 
-                    a(href="#") Our team
-                li.footer__mini-menu__li 
-                    a(href="#") Careers
-                li.footer__mini-menu__li 
-                    a(href="#") Investors
-        .footer__sec-4
-             ul.footer__sec-4-mini-menu-2
-                li.footer__mini-menu__li.footer__mini-menu__li--main 
-                    a(href="#") SUPPORT
-                li.footer__mini-menu__li 
-                    a(href="#") Documentation
-                li.footer__mini-menu__li 
-                    a(href="#") Community
-                li.footer__mini-menu__li 
-                    a(href="#") Get in Touch
-        .footer__sec-5
-            ul.footer__sec-5-mini-menu-2
-                li.footer__mini-menu__li.footer__mini-menu__li--main 
-                    a(href="#") Subscribe to our newsletter
-            p   Receive our latest news and promotions in your inbox!
-            .container-subscription-text-field
-                input.subscription-text-field(type="email" id="email" pattern=".+@globex.com" size="30" placeholder="Your email address")
-    .footer__copyright
-        .footer__copyright__container
-            p Copyright © 2018 Toxin UI Kit. All rights reserved
-            include ../messengers/messengers
+mixin footer(Class)
+    footer(class=Class)
+        .footer__container
+            .footer__sec-1
+                a(href="").footer__sec-1__logo 
+                    img(src="./img/Logo.svg", alt="logo")
+                p Lorem ipsum dolor sit amet consectetur adipiscing elit aliquam eget nullam pellentesque aliquam curabitur cociis.
+            .footer__sec-2
+                ul.footer__sec-2-mini-menu-1
+                    li.footer__mini-menu__li.footer__mini-menu__li--main 
+                        a(href="#") NAVIGATION
+                    li.footer__mini-menu__li 
+                        a(href="#") About US
+                    li.footer__mini-menu__li 
+                        a(href="#") News
+                    li.footer__mini-menu__li 
+                        a(href="#") Support
+                    li.footer__mini-menu__li 
+                        a(href="#") Products
+            .footer__sec-3
+                ul.footer__sec-3-mini-menu-2
+                    li.footer__mini-menu__li.footer__mini-menu__li--main 
+                        a(href="#") ABOUT US
+                    li.footer__mini-menu__li 
+                        a(href="#") Who we are
+                    li.footer__mini-menu__li 
+                        a(href="#") Our team
+                    li.footer__mini-menu__li 
+                        a(href="#") Careers
+                    li.footer__mini-menu__li 
+                        a(href="#") Investors
+            .footer__sec-4
+                ul.footer__sec-4-mini-menu-2
+                    li.footer__mini-menu__li.footer__mini-menu__li--main 
+                        a(href="#") SUPPORT
+                    li.footer__mini-menu__li 
+                        a(href="#") Documentation
+                    li.footer__mini-menu__li 
+                        a(href="#") Community
+                    li.footer__mini-menu__li 
+                        a(href="#") Get in Touch
+            .footer__sec-5
+                ul.footer__sec-5-mini-menu-2
+                    li.footer__mini-menu__li.footer__mini-menu__li--main 
+                        a(href="#") Subscribe to our newsletter
+                p   Receive our latest news and promotions in your inbox!
+                .container-subscription-text-field
+                    input.subscription-text-field(type="email" id="email" pattern=".+@globex.com" size="30" placeholder="Your email address")
+        .footer__copyright
+            .footer__copyright__container
+                p Copyright © 2018 Toxin UI Kit. All rights reserved
+                include ../messengers/messengers

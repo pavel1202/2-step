@@ -2,6 +2,8 @@ include ../../modules/head/head
 include ../../modules/checkbox-list/checkbox-list
 include ../../modules/rich-checkbox/rich-checkbox
 include ../../modules/checkbox/checkbox
+include ../../modules/hotel-card/hotel-card
+include ../../modules/footer/footer
 .search-room
     include ../../modules/header/header
     .search-room__conteiner
@@ -10,6 +12,7 @@ include ../../modules/checkbox/checkbox
             include ../../modules/filter-date-dropdown/filter-date-dropdown
             h3.search-room__title-dropdown-guests гости
             include ../../modules/dropdown-guests/dropdown-guests
+            h3.search-room__title-range-slider
             include ../../modules/range-slider/range-slider
             p.search-room__range-slider-descriptions Стоимость за сутки пребывания в номере
             h3.search-room__title-checkbox Checkbox Buttons
@@ -19,10 +22,29 @@ include ../../modules/checkbox/checkbox
             h3.search-room__title-rich-checkbox доступность
             +rich-checkbox('Широкий коридор','Ширина коридоров в номере не менее 91 см.')
             +rich-checkbox('Помощник для инвалидов','На 1 этаже вас встретит специалист и проводит до номера.')
+            h3.search-room__title-dropdown-room-amenities удобства номера
+            include ../../modules/dropdown-room-amenities/dropdown-room-amenities
+            .search-room__space-checkbox-list
+            +checkbox-list('дополнительные удобства',['Завтрак','Письменный стол','Стул для кормления','Кроватка','Телевизор','Шампунь'])
         main.search-room__content 
-            include ../../modules/pagination/pagination
+            h1.search-room__title Номера, которые мы для вас подобрали
+            .search-room__pagination
+                include ../../modules/pagination/pagination
+                p.search-room__pagination-description 1 – 12 из 100+ вариантов аренды
             ul.search-room__pages-list.paginationTable.list-group
-                li.tableItem Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi at nostrum ab, aut cum, omnis dicta itaque laudantium id maxime veniam expedita tempore ad consectetur officiis incidunt suscipit architecto molestiae.
+                li.tableItem.search-room__pages-li
+                    +hotel-card(['./img/hotel-room.png','./img/hotel-room11.png','./img/hotel-room2.png','./img/hotel-room3.png'],888,'люкс','9 990',5,145)
+                    +hotel-card(['./img/hotel-room1.png','./img/hotel-room10.png','./img/hotel-room2.png','./img/hotel-room3.png'],840,'','9 900',4,65)
+                    +hotel-card(['./img/hotel-room2.png','./img/hotel-room9.png','./img/hotel-room1.png','./img/hotel-room3.png'],880,'люкс','8 500',3,35)
+                    +hotel-card(['./img/hotel-room3.png','./img/hotel-room8.png','./img/hotel-room1.png','./img/hotel-room3.png'],856,'','7 300',5,19)
+                    +hotel-card(['./img/hotel-room4.png','./img/hotel-room7.png','./img/hotel-room1.png','./img/hotel-room3.png'],740,'','6 000',4,44)
+                    +hotel-card(['./img/hotel-room5.png','./img/hotel-room6.png','./img/hotel-room1.png','./img/hotel-room3.png'],982,'','5 800',3,56)
+                    +hotel-card(['./img/hotel-room6.png','./img/hotel-room5.png','./img/hotel-room1.png','./img/hotel-room3.png'],678,'','5 500',5,45)
+                    +hotel-card(['./img/hotel-room7.png','./img/hotel-room4.png','./img/hotel-room1.png','./img/hotel-room3.png'],450,'','5 300',4,39)
+                    +hotel-card(['./img/hotel-room8.png','./img/hotel-room3.png','./img/hotel-room1.png','./img/hotel-room3.png'],350,'','5 000',3,77)
+                    +hotel-card(['./img/hotel-room9.png','./img/hotel-room2.png','./img/hotel-room1.png','./img/hotel-room3.png'],666,'','5 000',5,25)
+                    +hotel-card(['./img/hotel-room10.png','./img/hotel-room1.png','./img/hotel-room1.png','./img/hotel-room3.png'],444,'','5 000',3,15)
+                    +hotel-card(['./img/hotel-room11.png','./img/hotel-room1.png','./img/hotel-room1.png','./img/hotel-room3.png'],352,'','5 000',3,55)
                 li.tableItem 
                 li.tableItem 
                 li.tableItem 
@@ -37,4 +59,5 @@ include ../../modules/checkbox/checkbox
                 li.tableItem 
                 li.tableItem 
                 li.tableItem 
-    include ../../modules/footer/footer
+    
+    +footer("footer--line")

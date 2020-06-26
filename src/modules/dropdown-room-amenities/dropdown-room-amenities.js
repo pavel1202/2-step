@@ -22,7 +22,7 @@ function DropdownGuests(dropdownGuests){
         }
     }
     dropdown.apply(function(mass){
-        dropdownGuests.getElementsByClassName('dropdown-room-amenities__text')[0].innerHTML = `${Number(mass[0])+Number(mass[1])} ${Number(mass[0])+Number(mass[1])>1?'гостя':'гость'} - ${mass[2]} ${mass[2]>1?'маденцев':'младенец'} `;
+        dropdownGuests.getElementsByClassName('dropdown-room-amenities__text')[0].innerHTML = `${Number(mass[0])} ${Number(mass[0])>1?'спальни':'спальня'} - ${mass[1]} ${mass[1]>1?'кровати...':'кровать...'} `;
         dropdown.hidden();
         visible = false;
     });

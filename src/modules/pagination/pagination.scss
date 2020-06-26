@@ -85,3 +85,22 @@
 .pagination__table{
   display: none;
 }
+.output{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+}
+.output>*{
+  margin-top: 20px;
+}
+@media(min-width:1157px){
+  .output{
+    justify-content: space-between;
+  }
+}
+@media(max-width:1156px){
+  .output{
+    justify-content: space-around;
+  }
+}

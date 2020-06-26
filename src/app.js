@@ -9,7 +9,7 @@ import './img/arrow.png';
 import './img/arrow.svg';
 import './img/insert_emoticon.svg';
 import './img/location_city.svg';
-import './img/avatart.png';
+import './img/avatar.png';
 import './img/heart.svg';
 import './img/heart-active.svg';
 import './img/star.svg';
@@ -18,7 +18,20 @@ import './img/hotel-room.png';
 import './img/hotel-room1.png';
 import './img/hotel-room2.png';
 import './img/hotel-room3.png';
+import './img/hotel-room4.png';
+import './img/hotel-room5.png';
+import './img/hotel-room6.png';
+import './img/hotel-room7.png';
+import './img/hotel-room8.png';
+import './img/hotel-room9.png';
+import './img/hotel-room10.png';
+import './img/hotel-room11.png';
 import './img/landing-background.png';
+import './img/hotels__roomDetails.png';
+import './img/hotels__roomDetails1.png';
+import './img/hotels__roomDetails2.png';
+import './img/comfort.svg';
+import './img/avatar1.png';
 
 
 
@@ -32,4 +45,5 @@ import './modules/range-slider/range-slider.js'
 import './modules/rate/rate.js'
 import './modules/pagination/pagination.js'
 import './modules/hotel-card/hotel-card.js'
+import './modules/dropdown-room-amenities/dropdown-room-amenities.js'
 

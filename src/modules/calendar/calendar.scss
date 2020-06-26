@@ -1,6 +1,8 @@
 .calendar{
     width: 318px;
-    position: relative;
+    position: absolute;
+    left: 0;
+    z-index: 10;
     
     
     border: 1px $gray solid;

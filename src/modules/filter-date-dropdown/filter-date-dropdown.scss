@@ -1,14 +1,14 @@
 .filter-date-dropdown{
-    width: 249px;
+    max-width: 266px;
+}
+.filter-date-dropdown__conteiner{
+    box-sizing: border-box;
     padding-top: 12px;
     padding-bottom: 10px;
     padding-left: 15px;
     padding-top: 8px;
     display: flex;
     justify-content: space-between;
-
-    position: relative;
-
     align-items: center;
 
 
@@ -31,8 +31,7 @@
 }
 .filter-date-dropdown__calendar{
     margin-top: 5px;
-    position: absolute;
-    top: 40px;
-    left: 0;
+    width: 100%;
+    position: relative;
     z-index: 10;
 }

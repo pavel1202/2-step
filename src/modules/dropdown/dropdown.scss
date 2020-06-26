@@ -1,6 +1,9 @@
 .dropdown{
-   width: 320px;
-   position: relative;
+    position: absolute;
+    top: -4px;
+    width: 100%;
+    z-index: -1;
+
 }
 
 .dropdown__container{
@@ -32,7 +35,6 @@
 
 .dropdown__choice{
     background-color: white;
-    width: 320px;
     padding-top: 4px;
     // display: flex;
     border: 1px solid $gray;
